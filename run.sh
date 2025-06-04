@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if command -v dotnet > /dev/null; then
-    dotnet run Program.cs
+    dotnet run
 elif command -v csc > /dev/null && command -v mono > /dev/null; then
     csc Program.cs && mono Program.exe
 else
